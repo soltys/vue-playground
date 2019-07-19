@@ -54,6 +54,7 @@
             rgba(168, 0, 119, 1) 82%,
             rgba(219, 54, 164, 1) 100%
         );
+        color:#ddd;
     }
 
     .card__action--dislike {
@@ -65,5 +66,9 @@
             rgba(19, 19, 19, 1) 100%
         );
         color: #fff;
+    }
+
+    .card__action--dislike:active{
+        color:#ddd;
     }
 </style>
