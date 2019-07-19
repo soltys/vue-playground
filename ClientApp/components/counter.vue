@@ -4,9 +4,12 @@
 
         <p>This is a simple example of a Vue.js component.</p>
 
-        <p>Current count: <strong>{{ count }}</strong></p>
+        <p>
+            Current count:
+            <strong>{{ count }}</strong>
+        </p>
 
-        <button @click="incrementCounter">Increment</button>
+        <button @click="increment">Increment</button>
         <button @click="decrement">Decrement</button>
     </div>
 </template>
@@ -16,16 +19,10 @@
     import { Component } from 'vue-property-decorator';
 
     @Component
-    export default class CounterComponent extends Vue {
+    export default class Counter extends Vue {
+        count = 0;
 
-        data() {
-            return {
-                count: 0
-            };
-        }
-
-
-        incrementCounter() {
+        increment() {
             this.count++;
         }
         decrement() {
